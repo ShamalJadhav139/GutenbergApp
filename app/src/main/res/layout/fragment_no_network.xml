@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/no_internet"
+        >
+
+
+    <com.etpl.newbase.view.uibase.textviews.CustomRegularTextView
+        android:layout_width="wrap_content"
+        android:text="@string/no_internet_msg"
+        android:layout_centerInParent="true"
+        android:padding="@dimen/_10sdp"
+        android:textSize="@dimen/large_text_size"
+        android:id="@+id/oopsTV"
+        android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</RelativeLayout>

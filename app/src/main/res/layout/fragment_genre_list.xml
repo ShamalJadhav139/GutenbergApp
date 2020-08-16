@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout >
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:clickable="false"
+        android:focusable="false"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/title"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <com.etpl.newbase.view.uibase.textviews.CustomBoldTextView
+            android:layout_width="match_parent"
+            android:textSize="@dimen/_48sdp"
+            android:text="@string/app_name"
+            android:textStyle="bold"
+            android:layout_margin="@dimen/_10sdp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_height="wrap_content"/>
+
+            <com.etpl.newbase.view.uibase.textviews.CustomMediumTextView
+                android:layout_width="match_parent"
+                android:textSize="@dimen/_20sdp"
+                android:text="@string/sub_heading"
+                android:textStyle="bold"
+                android:textColor="@color/text_color"
+                android:layout_marginBottom="@dimen/_10sdp"
+               android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/genreRv"
+            android:layout_below="@+id/title"
+            android:layout_width="match_parent"
+            android:padding="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:layout_height="wrap_content"/>
+        <View
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_3sdp"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:background="@color/text_color"/>
+    </RelativeLayout>
+</layout>
